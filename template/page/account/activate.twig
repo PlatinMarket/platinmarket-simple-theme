@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Account Activate</title>
+  </head>
+  <body>
+
+    {% if empty_token %}
+      <h2>{{ empty_token }}</h2>
+    {% else %}
+      <form method="post">
+        <p>Hesabınızı aktif etmek için şifrenizi giriniz.</p>
+        <input type="password" placeholder="Şifreniz" name="password"/>
+        <br/>
+        <button type="submit">Tamam</button>
+      </form>
+
+        {% if activate_failed %}
+          <p> {{ activate_failed }} </p>
+        {% endif %}
+
+        {% if error_fields %}
+          <ul>
+              {% for field in error_fields %}
+                <li>{{ field.field }} {{ field.message }} </li>
+              {% endfor %}
+          </ul>
+
+        {% endif %}
+
+    {% endif %}
+
+  </body>
+</html>

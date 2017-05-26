@@ -1,0 +1,24 @@
+{
+  "name": "platinmarket-simple-theme",
+  "folder": "default",
+  "label": "Başlangıç teması",
+  "scope": "web",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "fontawesome": "^4.7.2",
+    "moment": "^2.18.1"
+  },
+  "script": {
+    "_global": {
+      "$": "jquery",
+      "jQuery": "jquery",
+      "Tether": "tether",
+      "moment": "moment"
+    },
+    "app": "./src/app.js"
+  },
+  "style": {
+    "app": "./src/app.scss"
+  }
+}

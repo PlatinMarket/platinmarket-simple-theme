@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Account Login</title>
+  </head>
+  <body>
+    <h2>Account Login</h2>
+    <form method="post">
+      <input type="email" value="{{ login.email }}" placeholder="e-posta" name="email"/>
+      <input type="password" value="{{ login.password }}" placeholder="şifre" name="password"/>
+      <button type="submit">Tamam</button>
+    </form>
+    {% if login_failed %}
+      {{ login_failed }}
+    {% endif %}
+
+    {% if error_fields %}
+      <ul>
+        {% for field in error_fields %}
+          <li>{{ field.field }} {{ field.message }}</li>
+        {% endfor %}
+      </ul>
+
+    {% endif %}
+
+  </body>
+</html>

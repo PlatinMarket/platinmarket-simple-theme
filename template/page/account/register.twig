@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Account Register</title>
+  </head>
+  <body>
+    <h2>Account Register</h2>
+    <form method="post">
+      <input type="text" value="{{ register.firstname }}" placeholder="Adınız" name="firstname"/>
+      <br/>
+      <input type="text" value="{{ register.lastname }}" placeholder="Soyadınız" name="lastname"/>
+      <br/>
+      <input type="email" value="{{ register.email }}" placeholder="E-posta" name="email"/>
+      <br/>
+      <input type="password" value="{{ register.password }}" placeholder="Şifre" name="password"/>
+      <br/>
+      <button type="submit">Tamam</button>
+    </form>
+
+    {% if error_fields %}
+      <ul>
+          {% for field in error_fields  %}
+            <li>{{ field.field }} {{ field.message }} </li>
+          {% endfor %}
+      </ul>
+
+    {% endif %}
+
+  </body>
+</html>
