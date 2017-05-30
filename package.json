@@ -1,12 +1,12 @@
 {
   "name": "platinmarket-simple-theme",
-  "folder": "default",
   "label": "Başlangıç teması",
-  "scope": "web",
+  "folder": "default",
+  "type": "web",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "fontawesome": "^4.7.2",
     "moment": "^2.18.1"
   },
   "script": {
