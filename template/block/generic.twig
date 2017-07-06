@@ -1,0 +1,17 @@
+{# PlatinMarket default theme blocks #}
+
+{# Title block #}
+{% block title %}
+  {{ page_title }}
+{% endblock %}
+
+{# Meta block #}
+{% block meta %}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% endblock %}
+
+{# Style block #}
+{% block style %}
+  <link rel="stylesheet" href="{{ asset.resolve('default/app.css') }}" />
+{% endblock %}

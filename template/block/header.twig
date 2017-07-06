@@ -1,0 +1,61 @@
+{% block header %}
+  <header class="header mb-4">
+    <div class="container">
+      <div class="top-menu mb-2 d-flex justify-content-start">
+        <div class="part p-2">
+          <a href class="mr-2">Menü 1</a>
+          <a href class="mr-2">Menü 2</a>
+          <a href class="mr-2">Menü 3</a>
+          <a href class="mr-2">Menü 4</a>
+          <a href class="mr-2">Menü 5</a>
+        </div>
+        <div class="part p-2 ml-auto">
+          <a href class="ml-2">Menü 1</a>
+          <a href class="ml-2">Menü 2</a>
+          <a href class="ml-2">Menü 3</a>
+          <a href class="ml-2">Menü 4</a>
+          <a href class="ml-2">Menü 5</a>
+        </div>
+      </div>
+      <div class="main-controls mb-3 d-flex justify-content-between flex-nowrap">
+        <div class="logo p-2 mr-4 align-self-center">
+          <a href>
+            <img src="https://www.platinmarket.com/wp-content/uploads/2017/05/platinmarket-logo.png" />
+          </a>
+        </div>
+        <div class="search-bar p-2 align-self-center">
+          <div class="input-group">
+            <input type="search" class="form-control" placeholder="" />
+            <span class="input-group-btn">
+              <button href="/search" class="btn btn-primary" type="submit">Ara</button>
+            </span>
+          </div>
+        </div>
+        <div class="top-user ml-4 p-2 align-self-center">
+          <div class="d-flex flex-nowrap justify-content-end">
+            <a href="" class="btn btn-outline-info mr-1"><i class="fa fa-user-circle"></i> Hesabım</a>
+            <a href="" class="btn btn-outline-primary ml-1"><i class="fa fa-shopping-basket"></i> Sepetim <span class="badge badge-pill badge-primary">5</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu">
+      <div class="container">
+        <div class="menu d-inline-flex justify-content-between flex-nowrap">
+          <a href class="p-2 align-self-center">Menü 1</a>
+          <a href class="p-2 align-self-center">Menü 2</a>
+          <a href class="p-2 align-self-center">Menü 3</a>
+          <a href class="p-2 align-self-center">Menü 4</a>
+          <a href class="p-2 align-self-center">Menü 5</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-flash">
+      <div class="container">
+        <div class="flash-content p-2">
+          {% block flash %}main flash area{% endblock %}
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}
