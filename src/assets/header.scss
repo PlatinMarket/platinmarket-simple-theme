@@ -1,0 +1,47 @@
+.header{
+
+  // logo, searchbar, user & basket buttons
+
+  .top-menu{
+    a{
+      color: #455A64;
+      font-size: 80%;
+      font-weight: 500;
+    }
+  }
+
+  .main-controls{
+
+    .logo{
+      img{
+        height: 2.5rem;
+        width: auto;
+      }
+    }
+
+    .search-bar{
+      width: 100%;
+    }
+  }
+
+  .main-menu{
+    height: 2.5rem;
+    background-color: #263238;
+
+    .menu{
+      a{
+        color: #fff;
+
+        &:hover{
+          text-decoration: none;
+          background-color: #455A64;
+        }
+      }
+    }
+  }
+
+  .main-flash{
+    background-color: #ECEFF1;
+  }
+
+}

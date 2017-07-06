@@ -1,0 +1,37 @@
+.footer{
+
+  ul,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-top{
+    background-color: #ECEFF1;
+
+    .about,
+    .social,
+    .mail-list{
+      font-size: 90%;
+      color: #455A64;
+      a{
+        font-size: 90%;
+        color: #455A64;
+      }
+    }
+
+    .social{
+      .fa{
+        vertical-align: bottom;
+        font-size: 1.2rem;
+        margin-right: .75rem;
+      }
+    }
+  }
+
+  .footer-bottom{
+    font-size: 80%;
+    background-color: #263238;
+    color: #fff;
+  }
+}
