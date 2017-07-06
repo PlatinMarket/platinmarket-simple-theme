@@ -1,5 +1,5 @@
 {% block header %}
-  <header class="header mb-4">
+  <header class="header mb-2">
     <div class="container">
       <div class="top-menu mb-2 d-flex justify-content-start">
         <div class="part p-2">
@@ -42,11 +42,13 @@
     <div class="main-menu">
       <div class="container">
         <div class="menu d-inline-flex justify-content-between flex-nowrap">
+          {% block right_menu %}
           <a href class="p-2 align-self-center">Menü 1</a>
           <a href class="p-2 align-self-center">Menü 2</a>
           <a href class="p-2 align-self-center">Menü 3</a>
           <a href class="p-2 align-self-center">Menü 4</a>
           <a href class="p-2 align-self-center">Menü 5</a>
+          {% endblock %}
         </div>
       </div>
     </div>

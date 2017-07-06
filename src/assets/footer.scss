@@ -27,6 +27,12 @@
         margin-right: .75rem;
       }
     }
+
+    .mail-list{
+      .form-control{
+        border-color: $teal;
+      }
+    }
   }
 
   .footer-bottom{

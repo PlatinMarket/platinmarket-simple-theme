@@ -2,7 +2,7 @@
 
 {# Title block #}
 {% block title %}
-  {{ page_title }}
+  {{ page_title }} Mükkemmel site
 {% endblock %}
 
 {# Meta block #}
@@ -14,4 +14,8 @@
 {# Style block #}
 {% block style %}
   <link rel="stylesheet" href="{{ asset.resolve('default/app.css') }}" />
+{% endblock %}
+
+{% block product %}
+  {{ product.name }}
 {% endblock %}

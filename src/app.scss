@@ -2,6 +2,12 @@
   Store/Default Theme Style in sass
  */
 
+$black:  #263238 !global;
+$green:  #004D40 !global;
+$blue:   #546E7A !global;
+$teal:   #00BFA5 !global;
+$border-width: 2px !global;
+
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
@@ -12,6 +18,8 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+
 
 @import "assets/header.scss";
 @import "assets/footer.scss";

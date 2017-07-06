@@ -1,6 +1,7 @@
 {# Use generic blocks #}
 {% use "block/generic.twig" %}
 {% use "block/header.twig" %}
+{% use "block/footer.twig" %}
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -11,94 +12,40 @@
 <body>
   {{ block('header') }}
 
-<div class="container">
-  <div class="main-banner">
-    main banner
-  </div>
-
-  asdasd
-</div>
-
-<footer class="footer">
-  <div class="footer-top">
-    <div class="container">
+  <div class="container mb-2">
+    <div class="p-2 mb-2">
       <div class="row">
-        <div class="col-4 about">
-          <div class="p-2 pt-4 pb-4">
-            <p class="h6 mb-4">PlatinMarket</p>
-            <div class="row">
-              <div class="col-6">
-                <ul>
-                  <li><a href>İşlem Rehberi</a></li>
-                  <li><a href>Hesabım</a></li>
-                  <li><a href>Ödeme Seçenekleri</a></li>
-                  <li><a href>Banka Kampanyaları</a></li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul>
-                  <li><a href>Hakkımızda</a></li>
-                  <li><a href>Bizden Haberler</a></li>
-                  <li><a href>İletişim</a></li>
-                  <li><a href>Yardım</a></li>
-                </ul>
+        <div class="col-9">
+          <div class="main-banner">
+            <div class="card">
+              <div class="card-block">
+                <div class="owl-carousel owl-theme">
+                  <div> Your Content </div>
+                  <div> Your Content </div>
+                  <div> Your Content </div>
+                  <div> Your Content </div>
+                  <div> Your Content </div>
+                  <div> Your Content </div>
+                  <div> Your Content </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 social">
-          <div class="p-2 pt-4 pb-4">
-            <p class="h6 mb-4">Bizi Takip Edin</p>
-            <div class="row">
-              <div class="col-6">
-                <ul>
-                  <li><a href><i class="fa fa-facebook-square"></i>facebook</a></li>
-                  <li><a href><i class="fa fa-twitter-square"></i>twitter</a></li>
-                  <li><a href><i class="fa fa-instagram"></i>instagram</a></li>
-                  <li><a href><i class="fa fa-youtube-square"></i>youtube</a></li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul>
-                  <li><a href><i class="fa fa-linkedin-square"></i>linkedin</a></li>
-                  <li><a href><i class="fa fa-google-plus-square"></i>google+</a></li>
-                  <li><a href><i class="fa fa-pinterest-square"></i>pinterest</a></li>
-                  <li><a href><i class="fa fa-rss-square"></i>blog</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 mail-list">
-          <div class="p-2 pt-4 pb-4">
-            <p class="h6 mb-4">Haberiniz Olsun</p>
-            <div class="help-block mb-2">Kampanyalar ve yenilikler hakkında bilgi sahibi olmak için e-posta listemize kayıt olun.</div>
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="E-posta adresiniz" />
-              <span class="input-group-btn">
-                  <button href="" class="btn btn-primary" type="submit">Katıl</button>
-                </span>
+        <div class="col-3">
+          <div class="card">
+            <div class="card-block">
+              <h6 class="card-title text-center">Special products</h6>
+              {% block main_content %}{% endblock %}
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="p-2">
-        <div class="row">
-          <div class="col-6">
-            Copyright 2017 PlatinMarket - Tüm hakları saklıdır
-          </div>
-          <div class="col-6 text-right">
-            100% güvenli alışveriş
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<script type="application/javascript" src="{{ asset.resolve('default/app.js') }}"></script>
+
+  {{ block('footer') }}
+
 </body>
 </html>

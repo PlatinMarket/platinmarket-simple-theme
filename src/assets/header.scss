@@ -21,6 +21,10 @@
 
     .search-bar{
       width: 100%;
+
+      .form-control{
+        border-color: $blue;
+      }
     }
   }
 
