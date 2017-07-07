@@ -2,6 +2,9 @@
 {% use "block/generic.twig" %}
 {% use "block/header.twig" %}
 {% use "block/footer.twig" %}
+
+{% use "block/home/banner.twig" %}
+{% use "block/home/adcontent.twig" %}
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -12,25 +15,11 @@
 <body>
   {{ block('header') }}
 
-  <div class="container mb-2">
-    <div class="p-2 mb-2">
+  <div class="container p-4">
+    <div class="mb-3">
       <div class="row">
         <div class="col-9">
-          <div class="main-banner">
-            <div class="card">
-              <div class="card-block">
-                <div class="owl-carousel owl-theme">
-                  <div> Your Content </div>
-                  <div> Your Content </div>
-                  <div> Your Content </div>
-                  <div> Your Content </div>
-                  <div> Your Content </div>
-                  <div> Your Content </div>
-                  <div> Your Content </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {{ block('main_banner') }}
         </div>
         <div class="col-3">
           <div class="card">
@@ -41,8 +30,110 @@
           </div>
         </div>
       </div>
-
     </div>
+
+    <div class="mb-3">
+      <div class="row">
+        {{ block('ad_content') }}
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header text-center bg-white">
+              <h5 class="m-0">İlginizi Çekebilecek Ürünler</h5>
+            </div>
+            <div class="card-block">
+              asdasdasd
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="row">
+        <div class="col-9">
+          <ul class="nav nav-tabs nav-fill">
+            <li class="nav-item"><a class="nav-link active" href="#">Öne Çıkanlar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">İndirimli Ürünler</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Çok Satanlar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kargo Bedavalar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bugün Teslimat</a></li>
+          </ul>
+          <div class="card border-top-0 rounded-0 rounded-bottom">
+            <div class="card-block">
+              asdasdasd
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card mb-3">
+            <a href="">
+              <img class="card-img img-fluid" width="100%" src="https://images.hepsiburada.net/assets/storefront/banners/13-02-2017_1486725707203_1.png" />
+            </a>
+          </div>
+          <div class="card mb-3">
+            <a href="">
+              <img class="card-img img-fluid" width="100%" src="https://images.hepsiburada.net/assets/storefront/banners/04-07-2017_1499151172243_1.png" />
+            </a>
+          </div>
+          <div class="card mb-3">
+            <a href="">
+              <img class="card-img img-fluid" width="100%" src="https://images.hepsiburada.net/assets/storefront/banners/23-06-2017_1498725629094_1.png" />
+            </a>
+          </div>
+          <div class="card mb-3">
+            <a href="">
+              <img class="card-img img-fluid" width="100%" src="https://images.hepsiburada.net/assets/storefront/banners/30-06-2017_1498827606988_1.png" />
+            </a>
+          </div>
+          <div class="card mb-3">
+            <a href="">
+              <img class="card-img img-fluid" width="100%" src="https://images.hepsiburada.net/assets/storefront/banners/03-07-2017_1498826874034_1.png" />
+            </a>
+          </div>
+          <div class="card">
+            <a href="">
+              <img class="card-img img-fluid" width="100%" src="https://images.hepsiburada.net/assets/storefront/banners/07-07-2017_1499405915177_1.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header text-center bg-white">
+              <h5 class="m-0">Haftanın Ürünleri</h5>
+            </div>
+            <div class="card-block">
+              asdasdasd
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header text-center bg-white">
+              <h5 class="m-0">Ayın Ürünleri</h5>
+            </div>
+            <div class="card-block">
+              asdasdasd
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   {{ block('footer') }}

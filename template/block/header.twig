@@ -1,5 +1,5 @@
 {% block header %}
-  <header class="header mb-2">
+  <header class="header">
     <div class="container">
       <div class="top-menu mb-2 d-flex justify-content-start">
         <div class="part p-2">
@@ -53,10 +53,10 @@
       </div>
     </div>
     <div class="main-flash">
-      <div class="container">
-        <div class="flash-content p-2">
-          {% block flash %}main flash area{% endblock %}
-        </div>
+      <div class="flash-content">
+        {% block flash %}
+          <img class="img-fluid" src="https://images.hepsiburada.net/assets/storefront/banners/07-07-2017_1499349142867_2.png" />
+        {% endblock %}
       </div>
     </div>
   </header>
