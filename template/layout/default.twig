@@ -5,6 +5,8 @@
 
 {% use "block/home/banner.twig" %}
 {% use "block/home/adcontent.twig" %}
+
+{% use "block/global/product.twig" %}
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -15,7 +17,7 @@
 <body>
   {{ block('header') }}
 
-  <div class="container p-4">
+  <div class="container">
     <div class="mb-3">
       <div class="row">
         <div class="col-9">
@@ -23,9 +25,9 @@
         </div>
         <div class="col-3">
           <div class="card">
-            <div class="card-block">
-              <h6 class="card-title text-center">Special products</h6>
-              {% block main_content %}{% endblock %}
+            <div class="special-product">
+              <h6 class="card-title text-center mt-2 mb-3">Special products</h6>
+              {{ block('product') }}
             </div>
           </div>
         </div>
@@ -45,8 +47,17 @@
             <div class="card-header text-center bg-white">
               <h5 class="m-0">İlginizi Çekebilecek Ürünler</h5>
             </div>
-            <div class="card-block">
-              asdasdasd
+            <div class="main-page-products">
+              <div class="row">
+                <div class="col-3 col-product">{{ block('product') }}</div>
+                <div class="col-3 col-product">{{ block('product') }}</div>
+                <div class="col-3 col-product">{{ block('product') }}</div>
+                <div class="col-3 col-product">{{ block('product') }}</div>
+                <div class="col-3 col-product">{{ block('product') }}</div>
+                <div class="col-3 col-product">{{ block('product') }}</div>
+                <div class="col-3 col-product">{{ block('product') }}</div>
+                <div class="col-3 col-product">{{ block('product') }}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -64,8 +75,18 @@
             <li class="nav-item"><a class="nav-link" href="#">Bugün Teslimat</a></li>
           </ul>
           <div class="card border-top-0 rounded-0 rounded-bottom">
-            <div class="card-block">
-              asdasdasd
+            <div class="main-page-products">
+              <div class="row">
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+                <div class="col-4 col-product">{{ block('product') }}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,8 +132,16 @@
             <div class="card-header text-center bg-white">
               <h5 class="m-0">Haftanın Ürünleri</h5>
             </div>
-            <div class="card-block">
-              asdasdasd
+            <div class="owl-carousel owl-theme carousel-products">
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
             </div>
           </div>
         </div>
@@ -126,8 +155,16 @@
             <div class="card-header text-center bg-white">
               <h5 class="m-0">Ayın Ürünleri</h5>
             </div>
-            <div class="card-block">
-              asdasdasd
+            <div class="owl-carousel owl-theme carousel-products">
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
+              <div class="p-4">{{ block('product') }}</div>
             </div>
           </div>
         </div>
@@ -137,6 +174,7 @@
   </div>
 
   {{ block('footer') }}
+  {{ block('script') }}
 
 </body>
 </html>

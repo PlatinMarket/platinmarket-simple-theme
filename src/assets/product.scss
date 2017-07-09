@@ -1,0 +1,42 @@
+.product{
+
+  a,a:hover,a:active{
+    text-decoration: none !important;
+  }
+
+  .name{
+    font-size: 80%;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+
+  .prices{
+
+    font-weight: 600;
+
+
+    .reduce{
+      div{
+        padding: .4rem;
+        display: inline-block;
+        background-color: $red;
+        color: #fff;
+      }
+    }
+
+    .from-price{
+
+      font-size: 90%;
+      font-weight: 500;
+      color: #999;
+      line-height: 1rem;
+
+    }
+
+    .price{
+      font-size: 125%;
+      line-height: 1rem;
+    }
+  }
+
+}

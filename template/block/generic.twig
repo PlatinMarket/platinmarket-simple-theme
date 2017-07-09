@@ -8,7 +8,7 @@
 {# Meta block #}
 {% block meta %}
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 {% endblock %}
 
 {# Style block #}
@@ -16,6 +16,6 @@
   <link rel="stylesheet" href="{{ asset.resolve('default/app.css') }}" />
 {% endblock %}
 
-{% block product %}
-  {{ product.name }}
+{% block script %}
+  <script type="application/javascript" src="{{ asset.resolve('default/app.js') }}"></script>
 {% endblock %}

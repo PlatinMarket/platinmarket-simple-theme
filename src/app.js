@@ -8,5 +8,16 @@ global.bt = require('bootstrap');
 require('owl.carousel');
 
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
+  $('.main-banner .owl-carousel').owlCarousel({
+    items:1,
+    lazyLoad:true,
+    loop:true
+  });
+
+  $('.carousel-products').owlCarousel({
+    items:5,
+    nav:true,
+    navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'] ,
+    dots: false
+  });
 });

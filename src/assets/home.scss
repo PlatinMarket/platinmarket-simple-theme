@@ -1,0 +1,15 @@
+.special-product{
+  img{
+    width: 144px;
+  }
+}
+
+.main-page-products{
+  overflow: hidden;
+  margin-bottom: -1px;
+
+  .col-product{
+    border-bottom: 1px solid rgba(38, 50, 56, 0.05);
+    padding: 1rem;
+  }
+}

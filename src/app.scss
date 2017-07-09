@@ -34,5 +34,58 @@ body{
 
 
 
+@import "assets/product.scss";
+
 @import "assets/header.scss";
 @import "assets/footer.scss";
+
+@import "assets/home.scss";
+
+.carousel-products{
+  .owl-nav{
+    display: none;
+    margin: 0 !important;
+  }
+
+  &:hover .owl-nav{
+    display: block;
+  }
+}
+
+.owl-prev,
+.owl-next{
+  position: absolute;
+  top: 0;
+  border-radius: 100% !important;
+  display: block !important;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  margin: 12% 1rem !important;
+  background-color: #fff !important;
+  color: #aeaeae !important;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+  -ms-box-shadow: 0 0 10px rgba(0,0,0,.5);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+
+  .fa{
+    font-size: 3rem;
+    line-height: 2.4rem;
+  }
+}
+
+.owl-prev{
+  left: 0;
+  .fa{
+    margin-right: .2rem;
+  }
+}
+
+.owl-next{
+  right: 0;
+  .fa{
+    margin-left: .2rem;
+  }
+}
