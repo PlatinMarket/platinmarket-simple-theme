@@ -42,12 +42,12 @@ body{
 @import "assets/home.scss";
 
 .carousel-products{
-  .owl-nav{
+  & > .owl-nav{
     display: none;
     margin: 0 !important;
   }
 
-  &:hover .owl-nav{
+  &:hover > .owl-nav{
     display: block;
   }
 }

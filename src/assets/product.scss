@@ -1,7 +1,25 @@
 .product{
 
+  .owl-dots{
+    display:none;
+    position: absolute;
+    width: 100%;
+    margin-top: -.75rem !important;
+  }
+
+  &:hover{
+    .owl-dots{
+      display:block;
+    }
+  }
+
   a,a:hover,a:active{
     text-decoration: none !important;
+  }
+
+  .image img{
+    width: auto;
+    display: inline-block;
   }
 
   .name{
