@@ -10,10 +10,11 @@
     "moment": "^2.18.1",
     "owl.carousel": "^2.2.0"
   },
-  "script": {
-    "app": "./src/app.js"
-  },
-  "style": {
-    "app": "./src/app.scss"
-  }
+  "vendor": [
+    [ "jquery", "$", "jQuery", "window.jQuery" ],
+    [ "tether", "Tether" ],
+    "bootstrap"
+  ],
+  "script": "./src/app.js",
+  "style": "./src/app.scss"
 }
