@@ -15,6 +15,7 @@
     [ "tether", "Tether" ],
     "bootstrap"
   ],
-  "script": "./src/app.js",
-  "style": "./src/app.scss"
+  "entry": {
+    "app": [ "./src/app.scss", "./src/app.js" ]
+  }
 }
