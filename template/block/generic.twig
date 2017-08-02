@@ -13,12 +13,12 @@
 
 {# Style block #}
 {% block style %}
-  <link rel="stylesheet" href="{{ asset.resolve('default/assets/app.css') }}" />
+  <link rel="stylesheet" href="{{ asset.resolve('default/app.css') }}" />
 {% endblock %}
 
 {# Script block #}
 {% block script %}
-  <script type="application/javascript" src="{{ asset.resolve('default/assets/polyfills.js') }}"></script>
-  <script type="application/javascript" src="{{ asset.resolve('default/assets/vendor.js') }}"></script>
-  <script type="application/javascript" src="{{ asset.resolve('default/assets/app.js') }}"></script>
+  <script type="application/javascript" src="{{ asset.resolve('default/polyfills.js') }}"></script>
+  <script type="application/javascript" src="{{ asset.resolve('default/vendor.js') }}"></script>
+  <script type="application/javascript" src="{{ asset.resolve('default/app.js') }}"></script>
 {% endblock %}
