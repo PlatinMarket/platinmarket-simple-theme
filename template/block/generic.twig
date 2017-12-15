@@ -18,7 +18,7 @@
 
 {# Script block #}
 {% block script %}
-  <script defer type="application/javascript" src="{{ asset.resolve('default/polyfills.js') }}"></script>
-  <script defer type="application/javascript" src="{{ asset.resolve('default/vendor.js') }}"></script>
-  <script defer type="application/javascript" src="{{ asset.resolve('default/app.js') }}"></script>
+  <script type="application/javascript" src="{{ asset.resolve('default/polyfills.js') }}"></script>
+  <script type="application/javascript" src="{{ asset.resolve('default/vendor.js') }}"></script>
+  <script type="application/javascript" src="{{ asset.resolve('default/app.js') }}"></script>
 {% endblock %}

@@ -19,8 +19,8 @@
       </div>
       <div class="main-controls mb-3 d-flex justify-content-between flex-nowrap">
         <div class="logo mr-4 align-self-center">
-          <a href>
-            <img src="https://www.platinmarket.com/wp-content/uploads/2017/05/platinmarket-logo.png" />
+          <a href="/">
+            <img src="{{ asset.resolve('default/platinmarket-logo.png') }}" />
           </a>
         </div>
         <div class="search-bar align-self-center">
@@ -55,7 +55,7 @@
     <div class="main-flash">
       <div class="flash-content">
         {% block flash %}
-          <img class="img-fluid" src="https://images.hepsiburada.net/assets/storefront/banners/07-07-2017_1499349142867_2.png" />
+          <img class="img-fluid" src="{{ asset.resolve('default/ad/07-07-2017_1499349142867_2.png') }}" />
         {% endblock %}
       </div>
     </div>

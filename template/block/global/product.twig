@@ -1,12 +1,12 @@
 {% block product %}
 <div class="product mt-2 mb-2">
-  <a href title="Apple iPhone 7 32 GB (Apple Türkiye Garantili)">
+  <a href="/products/test" title="Apple iPhone 7 32 GB (Apple Türkiye Garantili)">
     <div class="image text-center mb-2">
       <div class="owl-carousel owl-theme">
-        <div><img class="img-fluid owl-lazy" data-src="https://images.hepsiburada.net/assets/Telefon/200/9502147248178.jpg" /></div>
-        <div><img class="img-fluid owl-lazy" data-src="https://images.hepsiburada.net/assets/Telefon/200/9502146625586.jpg" /></div>
-        <div><img class="img-fluid owl-lazy" data-src="https://images.hepsiburada.net/assets/Telefon/200/9502146658354.jpg" /></div>
-        <div><img class="img-fluid owl-lazy" data-src="https://images.hepsiburada.net/assets/Telefon/200/9502146691122.jpg" /></div>
+        <div><img class="img-fluid owl-lazy" data-src="{{ asset.resolve('default/product/sample_product_1.jpg') }}" /></div>
+        <div><img class="img-fluid owl-lazy" data-src="{{ asset.resolve('default/product/sample_product_2.jpg') }}" /></div>
+        <div><img class="img-fluid owl-lazy" data-src="{{ asset.resolve('default/product/sample_product_3.jpg') }}" /></div>
+        <div><img class="img-fluid owl-lazy" data-src="{{ asset.resolve('default/product/sample_product_4.jpg') }}" /></div>
       </div>
     </div>
     <div class="name text-center mb-3">

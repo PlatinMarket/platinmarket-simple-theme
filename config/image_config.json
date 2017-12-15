@@ -1,6 +1,22 @@
-{
-  "test": {
-    "width": 530,
-    "height": 530
+[
+  {
+    "name": "small",
+    "width": "100",
+    "height": "100"
+  },
+  {
+    "name": "medium",
+    "width": "240",
+    "height": "240"
+  },
+  {
+    "name": "large",
+    "width": "480",
+    "height": "480"
+  },
+  {
+    "name": "grande",
+    "width": "600",
+    "height": "600"
   }
-}
+]
