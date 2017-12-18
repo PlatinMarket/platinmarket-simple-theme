@@ -1,58 +1,99 @@
 {% block header %}
   <header class="header mb-3">
-    <div class="container">
-      <div class="top-menu mb-4 pt-2 d-flex justify-content-start">
-        <div class="part">
-          <a href class="mr-2">Menü 1</a>
-          <a href class="mr-2">Menü 2</a>
-          <a href class="mr-2">Menü 3</a>
-          <a href class="mr-2">Menü 4</a>
-          <a href class="mr-2">Menü 5</a>
-        </div>
-        <div class="part ml-auto">
-          <a href class="ml-2">Menü 1</a>
-          <a href class="ml-2">Menü 2</a>
-          <a href class="ml-2">Menü 3</a>
-          <a href class="ml-2">Menü 4</a>
-          <a href class="ml-2">Menü 5</a>
-        </div>
-      </div>
-      <div class="main-controls mb-3 d-flex justify-content-between flex-nowrap">
-        <div class="logo mr-4 align-self-center">
-          <a href="/">
-            <img src="{{ asset.resolve('default/platinmarket-logo.png') }}" />
-          </a>
-        </div>
-        <div class="search-bar align-self-center">
-          <div class="input-group">
-            <input type="search" class="form-control" placeholder="" />
-            <span class="input-group-btn">
-              <button href="/search" class="btn btn-primary" type="submit">Ara</button>
-            </span>
-          </div>
-        </div>
-        <div class="top-user ml-4 align-self-center">
-          <div class="d-flex flex-nowrap justify-content-end">
-            <a href="" class="btn btn-outline-info mr-1"><i class="fa fa-user-circle"></i> Hesabım</a>
-            <a href="" class="btn btn-outline-primary ml-1"><i class="fa fa-shopping-basket"></i> Sepetim <span class="badge badge-pill badge-primary">5</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main-menu">
+    <nav class="navbar p-0 d-none d-sm-block">
       <div class="container">
-        <div class="menu d-inline-flex justify-content-between flex-nowrap">
-          {% block right_menu %}
-          <a href class="p-2 align-self-center">Menü 1</a>
-          <a href class="p-2 align-self-center">Menü 2</a>
-          <a href class="p-2 align-self-center">Menü 3</a>
-          <a href class="p-2 align-self-center">Menü 4</a>
-          <a href class="p-2 align-self-center">Menü 5</a>
-          {% endblock %}
+        <div class="top-menu mb-4 pt-2 d-flex justify-content-start">
+          <div class="part">
+            <a href class="mr-2">Menü 1</a>
+            <a href class="mr-2">Menü 2</a>
+            <a href class="mr-2">Menü 3</a>
+            <a href class="mr-2">Menü 4</a>
+            <a href class="mr-2">Menü 5</a>
+          </div>
+          <div class="part ml-auto">
+            <a href class="ml-2">Menü 1</a>
+            <a href class="ml-2">Menü 2</a>
+            <a href class="ml-2">Menü 3</a>
+            <a href class="ml-2">Menü 4</a>
+            <a href class="ml-2">Menü 5</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="main-flash">
+    </nav>
+    <nav class="navbar p-0 d-none d-sm-block">
+     <div class="container">
+        <div class="main-controls mb-3 d-flex justify-content-between flex-nowrap">
+          <div class="logo mr-4 align-self-center">
+            <a href="/">
+              <img src="{{ asset.resolve('default/platinmarket-logo.png') }}" />
+            </a>
+          </div>
+          <div class="search-bar align-self-center">
+            <div class="input-group">
+              <input type="search" class="form-control" placeholder="" />
+              <span class="input-group-btn">
+                <button href="/search" class="btn btn-primary" type="submit">Ara</button>
+              </span>
+            </div>
+          </div>
+          <div class="top-user ml-4 align-self-center">
+            <div class="d-flex flex-nowrap justify-content-end">
+              <a href="" class="btn btn-outline-info mr-1"><i class="fa fa-user-circle"></i> Hesabım</a>
+              <a href="" class="btn btn-outline-primary ml-1"><i class="fa fa-shopping-basket"></i> Sepetim <span class="badge badge-pill badge-primary">5</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-dark bg-dark p-0 d-none d-sm-block">
+      <div class="main-menu">
+        <div class="container">
+          <div class="menu d-inline-flex justify-content-between flex-nowrap">
+            {% block right_menu %}
+            <a href class="p-2 align-self-center">Menü 1</a>
+            <a href class="p-2 align-self-center">Menü 2</a>
+            <a href class="p-2 align-self-center">Menü 3</a>
+            <a href class="p-2 align-self-center">Menü 4</a>
+            <a href class="p-2 align-self-center">Menü 5</a>
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-light text-primary d-sm-none">
+
+      <a data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+      <a href="/" class="navbar-brand">
+        <img class="img-fluid" src="{{ asset.resolve('default/platinmarket-logo.png') }}" />
+      </a>
+      <a><i class="fa fa-shopping-cart fa-2x"></i></a>
+
+      <div class="input-group">
+        <input type="search" class="form-control" placeholder="" />
+        <span class="input-group-btn">
+          <button href="/search" class="btn btn-primary" type="submit">Ara</button>
+        </span>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-flash d-none d-sm-block">
       <div class="flash-content">
         {% block flash %}
           <img class="img-fluid" src="{{ asset.resolve('default/ad/07-07-2017_1499349142867_2.png') }}" />

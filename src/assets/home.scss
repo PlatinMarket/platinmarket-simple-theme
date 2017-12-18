@@ -14,3 +14,15 @@
     padding: 1rem;
   }
 }
+
+@include media-breakpoint-down(xs) {
+  .product-navs {
+    overflow-y: hidden;
+    overflow-x: auto;
+    border-bottom: 0;
+    flex-wrap: unset;
+    .nav-item{
+      width: 200px;
+    }
+  }
+}
